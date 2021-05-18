@@ -6,47 +6,52 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/theme/simple.css" id="theme">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/theme/simple.min.css" id="theme">
+
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 </head>
 <body>
   <div class="reveal">
     <div class="slides">
+      <!--
+        INTRO: configurar opciones del intro en _config.yml
+      -->
       <section 
         class="intro"
         data-separator="^\n---\n$" 
         data-separator-vertical="^\n--\n$"
-        data-background-image="{{site.landing_image}}"
+        data-background-image="{{site.intro.background-image-path}}"
         data-background-opacity=0.8 
       >
         <header>
           <img src="https://res.cloudinary.com/boolean-spa/image/upload/v1620172881/logo-horizontal_hqou69.png" alt="logo-boolean">
-        </header>  
+        </header>
+        <div class="title">
+          <h1>APLICACIÓN WEB</h1>
+          <h2>FULLSTACK JAVASCRIPT</h2>
+        </div>
       </section>
+      
       {% for post in site.posts reversed %}
-      <section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$">
-        <script type="text/template">
-          {{ post.content }}  
-  			</script>
-      </section>
+        <section
+          class="slide"
+          data-markdown
+          data-separator="^\n---\n$"
+          data-separator-vertical="^\n--\n$"
+        >
+          <h6>ahdajhfdjahjdhjahdja</h6>
+          <textarea data-template>
+            {{ post.content }}  
+          </textarea>
+        </section>
       {% endfor %}
     </div>
   </div>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/lib/js/head.min.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/plugin/markdown/markdown.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/plugin/zoom/zoom.js"></script>
-  <script>
-    // Full list of configuration options available here:
-    // https://github.com/hakimel/reveal.js#configuration
-    Reveal.initialize({
-      controls: true,
-      progress: true,
-      history: true,
-      center: true,
-      plugins: [RevealMarkdown],
-      theme: 'simple', // available themes are in /css/theme
-      transition: 'slide', // default/cube/page/concave/zoom/linear/fade/none
-    });
-  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/plugin/markdown/markdown.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/plugin/zoom/zoom.min.js"></script>
+
+  <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
 </body>

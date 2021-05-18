@@ -1,9 +1,102 @@
-$backgroundColor: #ffffff;
-$bodyColor: #000000;
-$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+@import "fonts";
 
-body {
-  background: $backgroundColor;
-  color: $bodyColor;
-  font-family: $bodyFont;
+:root {
+  --heading-font: 'Poppins', sans-serif;
+  --main-font: 'Poppins', sans-serif;
+}
+
+.reveal {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+  }
+  section {
+    font-family: var(--main-font);
+    height: 100vh;
+  }
+}
+
+body.slide-global {
+  &::before {
+    content: '';
+    background-image: url(https://res.cloudinary.com/boolean-spa/image/upload/v1620885226/boolean-fullstack-js/logo-slide_auf6sv.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: fixed;
+    top: 5vh;
+    right: 5vw;
+    width: 6vw;
+    height: 15vh;
+  }
+  &::after {
+    content: 'Boolean Academia. Todos los derechos reservados';
+    font-family: var(--main-font);
+    width: 100%;
+    font-size: larger;
+    display: inline-block;
+    bottom: 5vh;
+    left: 5vw;
+    position: fixed;
+  }
+}
+
+.intro {
+
+  header {
+    display: flex;
+    justify-content: flex-start;
+
+    img {
+      background: none;
+      border: none;
+      box-shadow: none;
+      width: 20vw;
+      margin: 5vw;
+    }
+  }
+
+  .title {
+
+    margin-top: 10vh;
+
+    h1, h2 {
+      max-width: 30vw;
+      padding: 0 5vw;
+      text-align: left;
+      font-weight: bold;
+      color: #132193;
+    }
+  
+    h1 {
+      font-size: 2em;
+  
+      &::before {
+        content: 'Curso';
+        background-color: #132193;
+        color: white;
+        position: fixed;
+        margin-top: -7vh;
+        border-radius: 16px;
+        padding: 5px 40px;
+        font-size: 0.6em;
+        letter-spacing: normal;
+      }
+    }
+    h2 {
+      font-size: 1.5em;
+    }
+  }
+}
+
+.slide {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mindmap-iframe {
+  width: 100%;
+  height: 70%;
+  margin: 10px 20px;
 }
