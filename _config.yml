@@ -1,0 +1,7 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Fullstack Javascript Slides" # the name of your site, e.g. ACME Corp.
+intro: 
+  background-image-path: "https://res.cloudinary.com/boolean-spa/image/upload/v1620881127/boolean-fullstack-js/Intro_yvab6y.svg"
+  title: "Aplicación web"
+  subtitle: "Fullstack Javascript"
