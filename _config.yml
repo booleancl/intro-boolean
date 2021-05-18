@@ -5,3 +5,4 @@ intro:
   background-image-path: "https://res.cloudinary.com/boolean-spa/image/upload/v1620881127/boolean-fullstack-js/Intro_yvab6y.svg"
   title: "Aplicación web"
   subtitle: "Fullstack Javascript"
+theme: jekyll-theme-cayman
