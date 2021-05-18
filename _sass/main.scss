@@ -1,7 +1,7 @@
 @import "fonts";
 
 $light-grey: #C8CAD7;
-$light-grey-opacity: rgba(200, 202, 215, 0.6);
+$light-grey-opacity: rgba(200, 202, 215, 0.5);
 
 :root {
   --heading-font: 'Poppins', sans-serif;
@@ -11,6 +11,7 @@ $light-grey-opacity: rgba(200, 202, 215, 0.6);
 .reveal {
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
+    font-weight: bold;
   }
   section {
     font-family: var(--main-font);
@@ -42,7 +43,6 @@ body.slide {
     position: fixed;
   }
 }
-
 
 .intro {
   header {
@@ -78,23 +78,8 @@ body.slide {
   }
 
   .title {
-    margin-top: 20vh;
-
-    @media (max-width: 1280px) {
-      margin-top: 20vh;
-      position: fixed;
-      bottom: 0;
-      background-color: $light-grey-opacity;
-      width: 100vw;
-      padding: 5vw;
-    }
-
-    h1, h2 {
-      padding: 0 5vw;
-      text-align: left;
-      font-weight: bold;
-      color: #132193;
-    }
+    position: fixed;
+    bottom: 20vh;
   
     h1 {
       font-size: min(max(1rem, 4vw), 2em);
@@ -110,12 +95,40 @@ body.slide {
         font-size: 0.6em;
         letter-spacing: normal;
       }
+
+      @media (max-width: 768px) {
+        font-size: 1.2em;
+      }
     }
     h2 {
       font-size: min(max(1rem, 4vw), 1.5em);
+
+      @media (max-width: 768px) {
+        font-size: 1em;
+      }
     }
 
-    
+    h1, h2 {
+      padding: 0 5vw;
+      text-align: left;
+      font-weight: bold;
+      color: #132193;
+    }
+
+    @media (max-width: 1280px) {
+      margin-top: 20vh;
+      background-color: $light-grey-opacity;
+      width: 100vw;
+      padding: 5vw;
+      bottom: 0;
+    }
+    @media (max-width: 768px) {
+      height: 20vh;
+      padding: 5vh 0;
+    }
+    @media (max-width: 480px) {
+      padding: 10vh 0;
+    }
   }
 }
 
