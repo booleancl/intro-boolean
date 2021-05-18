@@ -5,7 +5,9 @@ const booleanSlidesModule = {
     progress: true,
     history: true,
     center: true,
-    plugins: [RevealMarkdown],
+    plugins: [
+      RevealMarkdown
+    ],
     theme: 'simple', // https://revealjs.com/themes/
     transition: 'none', // https://revealjs.com/transitions/,
     disableLayout: true
@@ -15,11 +17,6 @@ const booleanSlidesModule = {
     const { indexh } = event;
     const isFirstSlide = Reveal.isFirstSlide();
 
-    if (isFirstSlide) {
-      document.body.classList.remove('slide-global')
-    } else {
-      document.body.classList.add('slide-global')
-    }
   },
   initialize() {
     // Full list of configuration options available here:

@@ -1,5 +1,8 @@
 @import "fonts";
 
+$light-grey: #C8CAD7;
+$light-grey-opacity: rgba(200, 202, 215, 0.6);
+
 :root {
   --heading-font: 'Poppins', sans-serif;
   --main-font: 'Poppins', sans-serif;
@@ -15,7 +18,7 @@
   }
 }
 
-body.slide-global {
+body.slide {
   &::before {
     content: '';
     background-image: url(https://res.cloudinary.com/boolean-spa/image/upload/v1620885226/boolean-fullstack-js/logo-slide_auf6sv.png);
@@ -40,6 +43,7 @@ body.slide-global {
   }
 }
 
+
 .intro {
   header {
     display: flex;
@@ -49,16 +53,42 @@ body.slide-global {
       background: none;
       border: none;
       box-shadow: none;
-      width: 20vw;
       margin: 5vw;
+
+      @media (max-width: 1280px) {
+        height: 8vh;
+        margin: 2vw;
+      }
+
+      @media (max-width: 768px) {
+        height: 5vh;
+        margin: 2vw;
+      }
+    }
+
+    @media (max-width: 1280px) {
+      position: fixed;
+      top: 0;
+      background-color: $light-grey-opacity;
+      width: 100vw;
+      padding: 2vw;
+      height: 10vh;
     }
   }
 
   .title {
     margin-top: 20vh;
 
+    @media (max-width: 1280px) {
+      margin-top: 20vh;
+      position: fixed;
+      bottom: 0;
+      background-color: $light-grey-opacity;
+      width: 100vw;
+      padding: 5vw;
+    }
+
     h1, h2 {
-      max-width: 50vw;
       padding: 0 5vw;
       text-align: left;
       font-weight: bold;
@@ -66,7 +96,7 @@ body.slide-global {
     }
   
     h1 {
-      font-size: 2em;
+      font-size: min(max(1rem, 4vw), 2em);
   
       &::before {
         content: 'Curso';
@@ -81,8 +111,10 @@ body.slide-global {
       }
     }
     h2 {
-      font-size: 1.5em;
+      font-size: min(max(1rem, 4vw), 1.5em);
     }
+
+    
   }
 }
 

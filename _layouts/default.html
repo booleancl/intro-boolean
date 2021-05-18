@@ -22,7 +22,8 @@
         data-separator="^\n---\n$" 
         data-separator-vertical="^\n--\n$"
         data-background-image="{{site.intro.background-image-path}}"
-        data-background-opacity=0.8 
+        data-background-position="right"
+        data-state="intro"
       >
         <header>
           <img src="https://res.cloudinary.com/boolean-spa/image/upload/v1620172881/logo-horizontal_hqou69.png" alt="logo-boolean">
@@ -39,6 +40,7 @@
           data-markdown
           data-separator="^\n---\n$"
           data-separator-vertical="^\n--\n$"
+          data-state="slide"
         >
           <script type="text/template">
             {{ post.content }}  
