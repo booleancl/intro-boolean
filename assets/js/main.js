@@ -10,7 +10,7 @@ const booleanSlidesModule = {
     ],
     theme: 'simple', // https://revealjs.com/themes/
     transition: 'none', // https://revealjs.com/transitions/,
-    disableLayout: true
+    //disableLayout: true
   },
   handleSlide(event) {
     // event.previousSlide, event.currentSlide, event.indexh, event.indexv
