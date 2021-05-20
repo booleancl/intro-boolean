@@ -18,6 +18,7 @@ const booleanSlidesModule = {
     const isFirstSlide = Reveal.isFirstSlide();
 
   },
+ 
   initialize() {
     // Full list of configuration options available here:
     // https://github.com/hakimel/reveal.js#configuration
@@ -28,3 +29,4 @@ const booleanSlidesModule = {
 };
 
 booleanSlidesModule.initialize();
+
