@@ -10,6 +10,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/theme/simple.min.css" id="theme">
 
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  
+    #mindmap {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.1.5/dist/style.min.css">
 </head>
 <body>
   <div class="reveal">
@@ -53,6 +66,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/plugin/markdown/markdown.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/plugin/zoom/zoom.min.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/d3@6.6.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.1.5/dist/index.umd.min.js"></script>
   <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
 </body>
