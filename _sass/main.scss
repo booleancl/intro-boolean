@@ -139,8 +139,23 @@ body.slide {
   align-items: center;
 }
 
-.mindmap-iframe {
-  width: 100%;
-  height: 70%;
+
+#mindmap {
+  width: 80vw;
+  height: 60vh;
   margin: 10px 20px;
+  display: block;
+}
+
+#mindmap-controls{
+  width: 10vw;
+
+  .mm-toolbar{
+    justify-content: center;
+    
+    &-brand{
+      display: none;
+    }
+  }
+
 }

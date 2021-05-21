@@ -134,7 +134,7 @@ const data = {
   ],
 };
 
-const { Markmap } = window.markmap();
+const { Markmap } = window.markmap;
 
 window.mm = Markmap.create('svg#mindmap', null, data);
 
@@ -148,6 +148,6 @@ setTimeout(() => {
   const toolbar = new markmap.Toolbar();
   toolbar.attach(mm);
   const el = toolbar.render();
-  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
-  document.body.append(el);
+  const container = document.getElementById('mindmap-controls')
+  container.append(el);
 })
