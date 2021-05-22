@@ -1,7 +1,7 @@
 @import "fonts";
 
 $light-grey: #C8CAD7;
-$light-grey-opacity: rgba(200, 202, 215, 0.5);
+$light-grey-opacity: rgba(200, 202, 215, 0.9);
 
 :root {
   --heading-font: 'Poppins', sans-serif;
@@ -9,13 +9,51 @@ $light-grey-opacity: rgba(200, 202, 215, 0.5);
 }
 
 .reveal {
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--heading-font);
     font-weight: bold;
   }
+
   section {
     font-family: var(--main-font);
     height: 100vh;
+  }
+
+  h1 {
+    @media (max-width: 768px) {
+      font-size: 1.2em;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 0.8em;
+    }
+  }
+
+  h2 {
+    @media (max-width: 768px) {
+      font-size: 1em;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 0.6em;
+    }
+  }
+
+  ul {
+    li {
+      @media (max-width: 768px) {
+        font-size: 0.8em;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 0.5em;
+      }
+    }
   }
 }
 
@@ -32,6 +70,7 @@ body.slide {
     width: 6vw;
     height: 15vh;
   }
+
   &::after {
     content: 'Boolean Academia. Todos los derechos reservados';
     font-family: var(--main-font);
@@ -41,6 +80,14 @@ body.slide {
     bottom: 5vh;
     left: 5vw;
     position: fixed;
+
+    @media (max-width: 768px) {
+      font-size: 1em;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 0.7em;
+    }
   }
 }
 
@@ -80,10 +127,10 @@ body.slide {
   .title {
     position: fixed;
     bottom: 20vh;
-  
+
     h1 {
       font-size: min(max(1rem, 4vw), 2em);
-  
+
       &::before {
         content: 'Proyecto';
         background-color: #132193;
@@ -99,16 +146,26 @@ body.slide {
       @media (max-width: 768px) {
         font-size: 1.2em;
       }
+
+      @media (max-width: 480px) {
+        font-size: 0.8em;
+      }
     }
+
     h2 {
       font-size: min(max(1rem, 4vw), 1.5em);
 
       @media (max-width: 768px) {
         font-size: 1em;
       }
+
+      @media (max-width: 480px) {
+        font-size: 0.6em;
+      }
     }
 
-    h1, h2 {
+    h1,
+    h2 {
       padding: 0 5vw;
       text-align: left;
       font-weight: bold;
@@ -122,12 +179,18 @@ body.slide {
       padding: 5vw;
       bottom: 0;
     }
+
     @media (max-width: 768px) {
       height: 20vh;
       padding: 5vh 0;
     }
+
     @media (max-width: 480px) {
+      height: 15vh;
       padding: 10vh 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
     }
   }
 }
@@ -147,15 +210,31 @@ body.slide {
   display: block;
 }
 
-#mindmap-controls{
-  width: 10vw;
+#mindmap-controls {
+  width: 40vw;
+  position: fixed;
+  bottom: 10vh;
 
-  .mm-toolbar{
-    justify-content: center;
-    
-    &-brand{
-      display: none;
-    }
+  @media (max-width: 768px) {
+    width: 50vw;
   }
 
+  @media (max-width: 480px) {
+    width: 60vw;
+  }
+
+  .mm-toolbar {
+    justify-content: center;
+
+    &-brand {
+      display: none;
+    }
+
+    &-item {
+      & > * {
+        min-width: 10vw;
+        height: 5vh;
+      }
+    }
+  }
 }
