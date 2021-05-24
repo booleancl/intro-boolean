@@ -21,17 +21,14 @@
 #### Cypress
 #### ESlint
 #### Jest
-#### Test framework
 ## Backend
 ### NodeJS
 #### Express
-##### Endpoints
 ##### Business Logic Services
-#### Middleware
+##### Endpoints & Middlewares
 ### Postgres
-##### Migraciones
+##### Migraciones & Seeds
 ##### Sequelize ORM
-##### Seeds
 ### Firebase
 ##### Cloud Services
 ### Code Quality
