@@ -1,4 +1,4 @@
-# Proyecto Fullstack Javascript
+# Desarrollador Fullstack
 ## Frontend
 ### Frontend Frameworks
 #### Angular
@@ -17,8 +17,7 @@
 #### Semantic UI
 ### State Management Solution
 #### NGRX
-#### Flux
-#### Context
+#### Redux
 #### Vuex
 ### SPA/Router
 ### Cloud Services
@@ -29,12 +28,16 @@
 #### Unit Tests
 #### Linters  
 ## Backend
-### JS Runtime
-#### Web Framework
+### Backend Frameworks
 ##### Endpoints
 ##### Business Logic Services
 ##### Middleware 
-#### Database
+### Background Jobs
+### Code Quality
+#### Integration Test
+#### Unit Tests
+#### Linters  
+### Database
 ##### SQL
 ##### NoSQL
 ## Deployment

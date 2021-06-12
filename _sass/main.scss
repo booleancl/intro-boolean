@@ -203,14 +203,14 @@ body.slide {
 }
 
 
-#mindmap {
+#mindmap, #mindmap-generic {
   width: 80vw;
   height: 60vh;
   margin: 10px 20px;
   display: block;
 }
 
-#mindmap-controls {
+#mindmap-controls, #mindmap-controls-generic {
   width: 40vw;
   position: fixed;
   bottom: 10vh;
