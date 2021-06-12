@@ -8,3 +8,5 @@ Buscan cambiarse de trabajo para entrar a empresas con equipos ágiles que imple
   - Práctias de mantenibilidad de código
   - Flexibilidad para entrega de valor
   - Patrones de diseño y Arquitecturas
+
+👀 👀  Echemos un vistazo a algúnas tendencias 👀 👀 
