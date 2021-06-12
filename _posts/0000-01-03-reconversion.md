@@ -1,16 +1,10 @@
-## Evolución/Reconversión profesional 
-
-Datos de GetOnBoard
+## Evolución profesional 
 
 Personas que ya trabajan en el rubro (un año +), pero requieren capacitación de alta calidad en desarrollo de aplicaciones.
+Buscan cambiarse de trabajo para entrar a empresas con equipos ágiles que implementan prácticas como:
 
-Buscan cambiarse de trabajo para entrar a empresas con equipos verdaderamente ágiles.
-
-
-
-
-Metodología
-Calidad
-Mantenibilidad
-Flexibilidad
-Patrones
+  - Metodologías modernas
+  - Calidad de software
+  - Práctias de mantenibilidad de código
+  - Flexibilidad para entrega de valor
+  - Patrones de diseño y Arquitecturas
