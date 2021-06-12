@@ -22,7 +22,7 @@ const booleanSlidesModule = {
         
         const scaleTarget = wordMap.querySelector('circle.scale-target')
         
-        scaleTarget.setAttribute('fill', 'rgb(252,186,158)')
+        scaleTarget.setAttribute('fill', 'rgb(155, 93, 100)')
         scaleTarget.innerHTML = `
           <animateTransform
             attributeName="transform"

@@ -9,4 +9,4 @@ Buscan cambiarse de trabajo para entrar a empresas con equipos ágiles que imple
   - Flexibilidad para entrega de valor
   - Patrones de diseño y Arquitecturas
 
-👀 👀  Echemos un vistazo a algúnas tendencias 👀 👀 
+¡Echemos un vistazo a algúnas tendencias de la insdustria! 👀 👀 
